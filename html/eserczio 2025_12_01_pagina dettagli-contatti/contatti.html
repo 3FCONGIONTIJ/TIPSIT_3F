@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Modulo</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #ffaeae; padding: 20px;">
+
+    <h2 style="color: #dc3545; border-bottom: 2px solid #dc3545; padding-bottom: 5px;">Modulo di Contatto</h2>
+
+    <form action="index.html" method="post" style="background-color: rgb(252, 200, 200); padding: 25px; border: 1px solid #ffdada; max-width: 400px; margin: 20px 0; border-radius: 5px;">
+        
+        <label for="nome" style="display: block; margin-bottom: 5px; font-weight: bold;">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Jacopo Congionti" required 
+               style="display: block; margin-bottom: 15px; width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #ffebeb; border-radius: 3px;">
+
+        <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="jacopo.congionti@esempio.it" required 
+               style="display: block; margin-bottom: 15px; width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #ffebeb; border-radius: 3px;">
+
+        <label for="messaggio" style="display: block; margin-bottom: 5px; font-weight: bold;">Messaggio:</label>
+        <textarea id="messaggio" name="messaggio" required 
+                  style="display: block; margin-bottom: 15px; width: 100%; box-sizing: border-box; height: 120px; padding: 10px; border: 1px solid #ffebeb; border-radius: 3px;"
+                  placeholder="Scrivi qui il tuo messaggio..."></textarea>
+        
+        <label for="nota" style="display: block; margin-bottom: 5px;">Nota (Info Contatto):</label>
+        <textarea id="nota" name="nota_info" readonly 
+                  style="display: block; margin-bottom: 20px; width: 100%; box-sizing: border-box; height: 50px; padding: 10px; border: 1px solid #ffebeb; background-color: #ffeeee; font-style: italic; border-radius: 3px;">
+Le risposte saranno inviate entro 48 ore lavorative.
+        </textarea>
+
+
+        <input type="submit" value="Invia Modulo" 
+               style="padding: 10px 15px; background-color: #28a745; color: white; border: none; cursor: pointer; border-radius: 3px; font-weight: bold;">
+
+    </form>
+
+    <hr style="margin: 40px 0;">
+
+    <p>
+        <a href="index.html" style="text-decoration: none; color: #007bff; font-weight: bold;">Torna alla Pagina Principale</a>
+    </p>
+
+</body>
+</html>
