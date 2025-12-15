@@ -3,7 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <title>Risorse Utili</title>
-    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Azzurro chiaro */
+            color: #333;
+        }
+
+        /* Header e Navigazione */
+        header {
+            background-color: #4682b4; /* Blu acciaio scuro */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffd700; /* Giallo oro */
+        }
+
+        .nav-links a {
+            color: #e0ffff; /* Azzurro chiaro */
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Contenuto Principale */
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #8b0000; /* Rosso scuro/Borgogna */
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 5px;
+        }
+
+        /* Stili Form e Select (Agenzie Spaziali) */
+        form {
+            background-color: #fffacd; /* Giallo chiaro */
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+        }
+        
+        label {
+            font-weight: bold;
+            color: #4b0082; /* Indaco scuro */
+            margin-right: 10px;
+        }
+
+        select#agenzia {
+            padding: 8px;
+            border: 2px solid #4682b4; /* Bordo blu */
+            border-radius: 4px;
+            background-color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+        }
+
+        select#agenzia:hover {
+            border-color: #8b0000; /* Bordo rosso al passaggio del mouse */
+        }
+
+        /* Stili Lista Risorse (ol) */
+        ol {
+            padding-left: 20px;
+            list-style-type: decimal;
+        }
+        
+        ol li {
+            padding: 10px 0;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #ccc;
+            display: flow-root; /* Contiene gli elementi flottanti (immagini) */
+        }
+        
+        ol li:last-child {
+            border-bottom: none;
+        }
+
+        ol li a {
+            color: #4682b4; /* Link in blu */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        ol li a:hover {
+            color: #8b0000; /* Link in rosso al passaggio del mouse */
+            text-decoration: underline;
+        }
+        
+        /* Stili Immagini (Loghi) */
+        img {
+            float: right; /* Flotta le immagini a destra del link */
+            margin-left: 15px;
+            border: 2px solid #4b0082; /* Bordo indaco */
+            border-radius: 5px;
+            max-width: 80px;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
 <body>
 
     <header>
@@ -27,17 +146,21 @@
                 <option value="csa">CSA (Canada)</option>
                 <option value="jaxa">JAXA (Giappone)</option>
             </select>
-            </form>
+        </form>
 
         <h3>Fonti Consigliate per lo Studio</h3>
         <ol>
-            <li><a href="#">Sito Ufficiale della NASA</a> (Dati e Immagini)</li>
-            <img src="nasa.jfif" alt="Logo NASA" width="100">
-            <li><a href="#">Enciclopedia Britannica - Sistema Solare</a> (Contenuto Accademico)</li>
-            <img src="britannica.jfif" alt="Logo Britannica" width="100">
+            <li><a href="#">Sito Ufficiale della NASA</a> (Dati e Immagini)
+            <img src="nasa.jfif" alt="Logo NASA"></li>
+            
+            <li><a href="#">Enciclopedia Britannica - Sistema Solare</a> (Contenuto Accademico)
+            <img src="britannica.jfif" alt="Logo Britannica"></li>
+            
             <li><a href="#">Canale YouTube divulgativo "Astronomia Facile"</a> (Tutorial Video)</li>
-            <li><a href="#">Rivista "Spazio e Universo"</a> (Ultime Scoperte)</li>
-            <img src="spazio_universo.jfif" alt="Logo Spazio e Universo" width="100">
+            
+            <li><a href="#">Rivista "Spazio e Universo"</a> (Ultime Scoperte)
+            <img src="spazio_universo.jfif" alt="Logo Spazio e Universo"></li>
+            
             <li><a href="#">Podcast "Viaggio nel Cosmo"</a> (Interviste con Esperti)</li>
         </ol>
         

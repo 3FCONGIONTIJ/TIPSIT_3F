@@ -3,7 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Lascia un Feedback</title>
-    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ffd700;
+        }
+
+        .nav-links a {
+            color: #e0ffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #8b0000;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 5px;
+        }
+
+        form {
+            background-color: #fffacd;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        label {
+            font-weight: bold;
+            color: #4b0082;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #3cb371;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2e8b57;
+        }
+    </style>
+</head>
 <body>
     <header>
         <h1> Esplorando il Sistema Solare </h1>
@@ -20,18 +113,18 @@
         
         <h3>Modulo di Feedback</h3>
         <form>
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-            <label for="commenti">Commenti o Suggerimenti:</label><br>
-            <textarea id="commenti" name="commenti" rows="4" cols="50" required></textarea><br><br>
+            <label for="commenti">Commenti o Suggerimenti:</label>
+            <textarea id="commenti" name="commenti" rows="4" cols="50" required></textarea><br>
 
             <input type="submit" value="Invia Feedback">
         </form>
-        <p>Grazie per aver dato un feedback sul nostro sito</p>        
+        <p>Grazie per aver dato un feedback sul nostro sito</p>         
     </main>
 </body>
 </html>
