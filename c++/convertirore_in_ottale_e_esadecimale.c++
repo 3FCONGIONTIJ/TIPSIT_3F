@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-string decimaleABase(int n, int base) {
+string DecimaleAOttaleAEsadecimale(int n, int base) {
     if (n == 0) return "0";
     string risultato = "";
     string simboli = "0123456789ABCDEF"; 
@@ -14,7 +14,7 @@ string decimaleABase(int n, int base) {
 }
 int main() {
     int dec, scelta;
-    cout << "--- CONVERTITORE MULTI-BASE ---"<< endl;
+    cout << "Convertirore in Ottale Esadecimale "<< endl;
     cout << "Inserisci un numero decimale: ";
     cin >> dec;
     cout << "\nScegli la base di destinazione:"<< endl;
@@ -25,13 +25,13 @@ int main() {
     cin >> scelta;
     switch (scelta) {
         case 1:
-            cout << "In Binario: "<< decimaleABase(dec, 2) << endl;
+            cout << "In Binario: "<< DecimaleAOttaleAEsadecimale(dec, 2) << endl;
             break;
         case 2:
-            cout << "In Ottale: "<< decimaleABase(dec, 8) << endl;
+            cout << "In Ottale: "<< DecimaleAOttaleAEsadecimale(dec, 8) << endl;
             break;
         case 3:
-            cout << "In Esadecimale: "<< decimaleABase(dec, 16) << endl;
+            cout << "In Esadecimale: "<< DecimaleAOttaleAEsadecimale(dec, 16) << endl;
             break;
         default:
             cout << "Scelta non valida!"<< endl;
