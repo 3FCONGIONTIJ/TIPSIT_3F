@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-string DecimaleAOttaleAEsadecimale(int n, int base) {
+string DaDecimaleAconvertito(int n, int base) {
     if (n == 0) return "0";
     string risultato = "";
     string simboli = "0123456789ABCDEF"; 
@@ -25,13 +25,13 @@ int main() {
     cin >> scelta;
     switch (scelta) {
         case 1:
-            cout << "In Binario: "<< DecimaleAOttaleAEsadecimale(dec, 2) << endl;
+            cout << "In Binario: "<< DaDecimaleAconvertito(dec, 2) << endl;
             break;
         case 2:
-            cout << "In Ottale: "<< DecimaleAOttaleAEsadecimale(dec, 8) << endl;
+            cout << "In Ottale: "<< DaDecimaleAconvertito(dec, 8) << endl;
             break;
         case 3:
-            cout << "In Esadecimale: "<< DecimaleAOttaleAEsadecimale(dec, 16) << endl;
+            cout << "In Esadecimale: "<< DaDecimaleAconvertito(dec, 16) << endl;
             break;
         default:
             cout << "Scelta non valida!"<< endl;
