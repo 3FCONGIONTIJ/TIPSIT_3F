@@ -1,0 +1,24 @@
+#!/bin/bash
+mkdir -p ~/$CONGIONTI
+cd $CONGIONTI
+mkdir -p ~/$JA
+mkdir -p ~/$CO 
+miaVariabile=$(ls -l ~)
+echo "Contenuto della Home directory:"
+echo "$miaVariabile"
+cd ~
+rm -rf ~/$CONGIONTI
+echo "Pulizia iniziale completata."
+mkdir -p ~/Esercizi{3C,4C}
+mkdir -p ~/Lezioni{1C,2C}
+echo "Struttura lezioni creata."
+cd ~/Esercizi/4C
+touch "$JACOPO"1 "$JACOPO"2
+mv "$JACOPO"1 mio_cognome
+mv "$JACOPO"2 mio_nome
+tar cvf verifica_$CONGIONTI.tar mio_cognome mio_nome
+rm mio_nome
+rm mio_cognome
+mv verifica_$CONGIONTI.tar ~
+rm -rf ~/Esercizi/lezioni/{1C,2C,3C,4C}
+echo "--- Script completato con successo ---"
