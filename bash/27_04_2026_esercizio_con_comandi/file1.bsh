@@ -20,5 +20,6 @@ tar cvf verifica_$CONGIONTI.tar mio_cognome mio_nome
 rm mio_nome
 rm mio_cognome
 mv verifica_$CONGIONTI.tar ~
-rm -rf ~/Esercizi/lezioni/{1C,2C,3C,4C}
+rm -rf ~/Esercizi{3C,4C}
+rm -rf ~/Lezioni{1C,2C}
 echo "--- Script completato con successo ---"
